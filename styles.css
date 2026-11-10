@@ -1,0 +1,219 @@
+/* Blake Jakob */
+/* November 10, 2026 */
+/* Description: Global stylesheet for final project portfolio */
+
+/* CSS Reset for cross-browser consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global body styling */
+body {
+  background-color: #0D1117;
+  color: #C9D1D9;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Typography */
+h1, h2, h3 {
+  color: #F0F6FC;
+  font-family: 'Inter', sans-serif;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+a {
+  color: #56D364;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Focus indicator for keyboard navigation */
+a:focus, button:focus {
+  outline: 2px solid #56D364;
+  outline-offset: 2px;
+}
+
+/* Layout container */
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+main {
+  padding: 30px 0 50px;
+}
+
+/* Header & Navigation */
+header {
+  background-color: #0D1117;
+  border-bottom: 1px solid #2c3136;
+  padding: 16px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.brand {
+  border: 1px solid #2c3136;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: 700;
+  color: #F0F6FC;
+  font-family: 'Inter', sans-serif;
+}
+
+.brand:hover {
+  text-decoration: none;
+  border-color: #56D364;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 16px;
+}
+
+nav a {
+  color: #C9D1D9;
+  font-family: 'Inter', sans-serif;
+  padding: 8px 4px;
+  display: inline-block;
+  min-height: 44px;
+  line-height: 28px;
+}
+
+nav a:hover {
+  color: #56D364;
+  text-decoration: none;
+}
+
+nav a.active {
+  color: #F0F6FC;
+  border-bottom: 2px solid #56D364;
+}
+
+/* Cards & Sections */
+.card {
+  background-color: #373e47;
+  border: 1px solid #2c3136;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn-group {
+  margin: 20px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  min-height: 44px;
+  line-height: 24px;
+}
+
+.btn-green {
+  background-color: #56D364;
+  color: #0D1117;
+}
+
+.btn-green:hover {
+  background-color: #48b855;
+  text-decoration: none;
+}
+
+.btn-outline {
+  border: 1px solid #2c3136;
+  color: #F0F6FC;
+}
+
+.btn-outline:hover {
+  border-color: #56D364;
+  color: #56D364;
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid #2c3136;
+  padding: 24px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links a {
+  margin: 0 8px;
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .hero-row {
+    margin-bottom: 30px;
+  }
+
+  .projects-row {
+    display: flex;
+    gap: 24px;
+  }
+
+  .projects-row .card {
+    flex: 1;
+    margin-bottom: 0;
+  }
+
+  footer .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
