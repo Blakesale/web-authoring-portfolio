@@ -11,8 +11,8 @@
 </head>
 <body>
 <!-- Blake Jakob -->
-<!-- November 10, 2026 -->
-<!-- Description: Resume page -->
+<!-- November 17, 2026 -->
+<!-- Description: Resume page with education, coursework table, and producer experience -->
 
   <!-- Header & Navigation -->
   <header>
@@ -33,13 +33,138 @@
   <main>
     <div class="container">
 
-      <!-- Main Template Section -->
-      <section class="card">
-        <h1>Resume</h1>
-        <p>
-          This page will show off my resume.
-        </p>
-      </section>
+      <h1>Resume</h1>
+      <p>
+        My education in software development, the courses I have completed, and my experience as a music producer.
+      </p>
+
+      <!-- 2-Column Resume Layout -->
+      <div class="resume-layout">
+
+        <!-- Left Sidebar -->
+        <aside>
+          <section class="card">
+            <h2>Resume PDF</h2>
+            <p>Download a printable copy of my current resume.</p>
+            <a href="assets/Jakob-Resume.pdf" class="btn btn-green">Download PDF</a>
+          </section>
+
+          <section class="card">
+            <h2>Skills Summary</h2>
+            <div class="tags">
+              <span class="tag">C++</span>
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">Python</span>
+              <span class="tag">Git/GitHub</span>
+              <span class="tag">CLion</span>
+              <span class="tag">FL Studio</span>
+            </div>
+          </section>
+
+          <section class="card">
+            <h2>Links</h2>
+            <p><a href="https://github.com/blakesale" target="_blank" rel="noopener">GitHub Profile</a></p>
+            <p><a href="https://blakesale.com" target="_blank" rel="noopener">Production Credits</a></p>
+            <p><a href="mailto:blakejakob2@gmail.com">blakejakob2@gmail.com</a></p>
+          </section>
+        </aside>
+
+        <!-- Right Main Column -->
+        <div>
+
+          <!-- Education Section -->
+          <section class="card">
+            <h2>Education</h2>
+            <h3>Broward College &bull; A.S. in Software Development</h3>
+            <p>
+              Computer Programming &amp; Analysis Concentration &bull; Expected Graduation: 2027 &bull; GPA: 3.86
+            </p>
+            <p>
+              Coursework in C++, programming fundamentals, databases and MySQL, project management, and web authoring.
+            </p>
+          </section>
+
+          <!-- Relevant Coursework Table -->
+          <section class="card">
+            <h2>Relevant Coursework</h2>
+            <div class="table-wrap">
+              <table>
+                <caption>Software Development Courses at Broward College</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Course Code</th>
+                    <th scope="col">Course Title</th>
+                    <th scope="col">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>COP 1250C</td>
+                    <td>Programming 1</td>
+                    <td>Completed, Summer 2025</td>
+                  </tr>
+                  <tr>
+                    <td>COP 1000C</td>
+                    <td>Intro to Computer Programming</td>
+                    <td>Completed, Spring 2026</td>
+                  </tr>
+                  <tr>
+                    <td>COP 1334C</td>
+                    <td>Intro to C++</td>
+                    <td>Completed, Spring 2026</td>
+                  </tr>
+                  <tr>
+                    <td>COP 1700C</td>
+                    <td>Intro to Databases &amp; MySQL</td>
+                    <td>Completed, Summer 2026</td>
+                  </tr>
+                  <tr>
+                    <td>CIS 1513C</td>
+                    <td>Project Management</td>
+                    <td>Completed, Summer 2026</td>
+                  </tr>
+                  <tr>
+                    <td>COP 2335C</td>
+                    <td>Intermediate C++</td>
+                    <td>In Progress, Fall 2026</td>
+                  </tr>
+                  <tr>
+                    <td>CTS 1831C</td>
+                    <td>Web Authoring I</td>
+                    <td>In Progress, Fall 2026</td>
+                  </tr>
+                  <tr>
+                    <td>COP 2361C</td>
+                    <td>Object-Oriented Analysis</td>
+                    <td>Spring 2027</td>
+                  </tr>
+                  <tr>
+                    <td>CTS 2852C</td>
+                    <td>Client-Side Scripting</td>
+                    <td>Spring 2027</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <!-- Experience Section -->
+          <section class="card">
+            <h2>Experience</h2>
+            <h3>Blake$ale &bull; Music Producer</h3>
+            <p>
+              Broward County, FL &bull; 2016 &ndash; Present
+            </p>
+            <ul class="resume-list">
+              <li>Produced records for major-label artists including Travis Scott &amp; SoFaygo (&ldquo;CONTEST&rdquo;), DaBaby &amp; YoungBoy Never Broke Again (&ldquo;Hit&rdquo;), and Shenseea (&ldquo;Curious&rdquo;).</li>
+              <li>34 credited productions, including multiple tracks for BEAM.</li>
+              <li>Helped organize album camps, bringing producers and writers together to create music for artist projects.</li>
+            </ul>
+          </section>
+
+        </div>
+
+      </div>
 
     </div>
   </main>

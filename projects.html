@@ -11,8 +11,8 @@
 </head>
 <body>
 <!-- Blake Jakob -->
-<!-- November 10, 2026 -->
-<!-- Description: Projects Page -->
+<!-- November 17, 2026 -->
+<!-- Description: Projects page showcasing my C++ game and web coursework -->
 
   <!-- Header & Navigation -->
   <header>
@@ -33,13 +33,58 @@
   <main>
     <div class="container">
 
-      <!-- Main Template Section -->
-      <section class="card">
-        <h1>Projects</h1>
+      <h1>Projects</h1>
+      <p>
+        C++ and web development projects I have built, with a video demo and original soundtrack.
+      </p>
+
+      <!-- Featured Project: Hero's Journey (details column + media column) -->
+      <article class="card project-feature">
+
+        <div class="project-info">
+          <h2>Hero's Journey</h2>
+          <div class="tags">
+            <span class="tag">C++</span>
+            <span class="tag">Functions</span>
+            <span class="tag">File Input</span>
+          </div>
+          <p>
+            A text-based board game built in C++ for a team project. Players draw from a deck of 10 scenario cards loaded from a text file into parallel arrays, moving forward or back on each card, and win by reaching 20 spaces.
+          </p>
+          <p><a href="https://github.com/blakesale" target="_blank" rel="noopener">View on GitHub &rarr;</a></p>
+        </div>
+
+        <div class="project-media">
+          <video controls preload="metadata">
+            <source src="media/heros-journey-demo.mp4" type="video/mp4">
+            <track kind="captions" src="media/heros-journey-captions.vtt" srclang="en" label="English" default>
+            Your browser does not support the video tag.
+          </video>
+
+          <figure>
+            <figcaption>Soundtrack: &ldquo;Left Field 84&rdquo; (instrumental, produced by me in FL Studio)</figcaption>
+            <audio controls preload="metadata">
+              <source src="media/left-field-84.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </figure>
+        </div>
+
+      </article>
+
+      <!-- Web Authoring Coursework -->
+      <article class="card">
+        <h2>Web Authoring Portfolio</h2>
+        <div class="tags">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">WCAG</span>
+        </div>
         <p>
-          This Page will showcase some of my projects.
+          A mobile-first portfolio website created for CTS 1831C at Broward College using semantic HTML5 structure, responsive CSS layouts, and W3C validation.
         </p>
-      </section>
+        <p><a href="https://github.com/blakesale/web-authoring-portfolio" target="_blank" rel="noopener">View on GitHub &rarr;</a></p>
+      </article>
 
     </div>
   </main>

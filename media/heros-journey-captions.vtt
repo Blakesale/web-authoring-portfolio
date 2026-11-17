@@ -1,0 +1,74 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.150
+The game starts by asking for the player's name. Blake types his name.
+
+2
+00:00:02.150 --> 00:00:06.560
+The game welcomes Blake and shows the main menu: see rules, play game, or exit. He chooses 1 to see the rules.
+
+3
+00:00:06.560 --> 00:00:11.285
+Rules: you are 4 years into a sea expedition and need to find your way home.
+
+4
+00:00:11.285 --> 00:00:16.010
+Each of the 10 cards moves you forward or back. Reach 20 spaces before the cards run out to win.
+
+5
+00:00:16.010 --> 00:00:18.500
+Back at the main menu, Blake chooses 2 to play the game.
+
+6
+00:00:18.500 --> 00:00:20.220
+The journey begins.
+
+7
+00:00:20.220 --> 00:00:23.700
+Card 1: a storm rescue moves the ship forward 12 spaces. Location: 12.
+
+8
+00:00:23.700 --> 00:00:27.180
+Card 2: slow going through icebergs, back 5 spaces. Location: 7.
+
+9
+00:00:27.180 --> 00:00:30.660
+Card 3: a crew member goes missing, back 4 spaces. Location: 3.
+
+10
+00:00:30.660 --> 00:00:34.140
+Card 4: dolphins lead the ship to a shortcut, forward 7 spaces. Location: 10.
+
+11
+00:00:34.140 --> 00:00:37.620
+Card 5: a giant squid attack forces repairs, back 3 spaces. Location: 7.
+
+12
+00:00:37.620 --> 00:00:41.100
+Card 6: an uncharted island boosts morale, forward 8 spaces. Location: 15.
+
+13
+00:00:41.100 --> 00:00:44.580
+Card 7: mermaids distract the navigator, back 2 spaces. Location: 13.
+
+14
+00:00:44.580 --> 00:00:48.060
+Card 8: a sea map in a bottle reveals a current home, forward 10 spaces. Location: 23.
+
+15
+00:00:48.060 --> 00:00:51.540
+Card 9: the compass holds true through the fog, forward 5 spaces. Location: 28.
+
+16
+00:00:51.540 --> 00:00:55.020
+Card 10: a virus outbreak delays the journey, back 6 spaces. Location: 22.
+
+17
+00:00:55.020 --> 00:00:57.740
+Blake finishes at 22 steps, past the 20 needed, and wins the game.
+
+18
+00:00:57.740 --> 00:01:03.090
+Blake chooses 3 to exit, and the game thanks him for playing.
+

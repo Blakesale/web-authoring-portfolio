@@ -1,5 +1,5 @@
 /* Blake Jakob */
-/* November 10, 2026 */
+/* November 17, 2026 */
 /* Description: Global stylesheet for final project portfolio */
 
 /* CSS Reset for cross-browser consistency */
@@ -188,6 +188,132 @@ footer .container {
   margin: 0 8px;
 }
 
+/* Tags / Pills */
+.tags {
+  margin-bottom: 12px;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #0D1117;
+  border: 1px solid #2c3136;
+  border-radius: 12px;
+  padding: 2px 10px;
+  font-size: 12px;
+  color: #C9D1D9;
+  margin-right: 4px;
+  margin-bottom: 4px;
+}
+
+/* Embedded Audio & Video */
+video, audio {
+  width: 100%;
+  margin: 12px 0;
+}
+
+video {
+  border-radius: 4px;
+  background-color: #0D1117;
+}
+
+figure {
+  margin: 8px 0 0;
+}
+
+figcaption {
+  font-size: 14px;
+  color: #C9D1D9;
+}
+
+/* Coursework Table (Resume Page) */
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+caption {
+  text-align: left;
+  font-weight: 600;
+  color: #F0F6FC;
+  margin-bottom: 8px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #2c3136;
+}
+
+th {
+  background-color: #0D1117;
+  color: #F0F6FC;
+  font-family: 'Inter', sans-serif;
+}
+
+tbody tr:nth-of-type(odd) {
+  background-color: #373e47;
+}
+
+tbody tr:nth-of-type(even) {
+  background-color: #2c3136;
+}
+
+/* Resume Bullet List */
+.resume-list {
+  padding-left: 20px;
+}
+
+.resume-list li {
+  margin-bottom: 8px;
+}
+
+/* Contact Form */
+.form-group {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #F0F6FC;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  min-height: 44px;
+  background-color: #0D1117;
+  border: 1px solid #2c3136;
+  border-radius: 4px;
+  color: #F0F6FC;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 16px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #56D364;
+  outline-offset: 2px;
+}
+
+button.btn {
+  border: none;
+  cursor: pointer;
+}
+
 /* Desktop layout */
 @media (min-width: 768px) {
   h1 {
@@ -210,6 +336,41 @@ footer .container {
   .projects-row .card {
     flex: 1;
     margin-bottom: 0;
+  }
+
+  /* Featured Project: details column + media column */
+  .project-feature {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 24px;
+    align-items: start;
+  }
+
+  /* Skills 3 Column Grid */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .skills-grid .card {
+    margin-bottom: 0;
+  }
+
+  /* Resume Sidebar + Main Column */
+  .resume-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 28px;
+    align-items: start;
+  }
+
+  /* Contact 2-Column Layout */
+  .contact-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 28px;
+    align-items: start;
   }
 
   footer .container {
