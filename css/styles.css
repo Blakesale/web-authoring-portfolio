@@ -1,5 +1,5 @@
 /* Blake Jakob */
-/* November 17, 2026 */
+/* November 24, 2026 */
 /* Description: Global stylesheet for final project portfolio */
 
 /* CSS Reset for cross-browser consistency */
@@ -12,6 +12,7 @@
 /* Global body styling */
 body {
   background-color: #0D1117;
+  background-image: linear-gradient(to bottom, #0D1117, #131922);
   color: #C9D1D9;
   font-family: 'Open Sans', Arial, sans-serif;
   line-height: 1.6;
@@ -26,6 +27,7 @@ h1, h2, h3 {
 h1 {
   font-size: 28px;
   margin-bottom: 12px;
+  text-shadow: 1px 2px 4px #000000;
 }
 
 h2 {
@@ -49,6 +51,7 @@ a {
 
 a:hover {
   text-decoration: underline;
+  opacity: 0.85;
 }
 
 /* Focus indicator for keyboard navigation */
@@ -72,7 +75,9 @@ main {
 /* Header & Navigation */
 header {
   background-color: #0D1117;
+  background-image: linear-gradient(to right, #0D1117, #161b22);
   border-bottom: 1px solid #2c3136;
+  box-shadow: 0 2px 6px #000000;
   padding: 16px 0;
 }
 
@@ -90,11 +95,13 @@ header .container {
   font-weight: 700;
   color: #F0F6FC;
   font-family: 'Inter', sans-serif;
+  text-shadow: 1px 1px 2px #000000;
 }
 
 .brand:hover {
   text-decoration: none;
   border-color: #56D364;
+  opacity: 1;
 }
 
 nav ul {
@@ -116,6 +123,7 @@ nav a {
 nav a:hover {
   color: #56D364;
   text-decoration: none;
+  opacity: 1;
 }
 
 nav a.active {
@@ -126,10 +134,12 @@ nav a.active {
 /* Cards & Sections */
 .card {
   background-color: #373e47;
+  background-image: linear-gradient(to bottom right, #3b424c, #30363e);
   border: 1px solid #2c3136;
   border-radius: 6px;
   padding: 20px;
   margin-bottom: 20px;
+  box-shadow: 0 4px 10px #000000;
 }
 
 /* Buttons */
@@ -147,16 +157,19 @@ nav a.active {
   margin-bottom: 10px;
   min-height: 44px;
   line-height: 24px;
+  box-shadow: 0 2px 5px #000000;
 }
 
 .btn-green {
   background-color: #56D364;
+  background-image: linear-gradient(to bottom, #56D364, #45b652);
   color: #0D1117;
 }
 
 .btn-green:hover {
   background-color: #48b855;
   text-decoration: none;
+  opacity: 0.9;
 }
 
 .btn-outline {
@@ -168,6 +181,7 @@ nav a.active {
   border-color: #56D364;
   color: #56D364;
   text-decoration: none;
+  opacity: 1;
 }
 
 /* Footer */
@@ -176,6 +190,7 @@ footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
+  opacity: 0.9;
 }
 
 footer .container {
@@ -203,6 +218,7 @@ footer .container {
   color: #C9D1D9;
   margin-right: 4px;
   margin-bottom: 4px;
+  opacity: 0.9;
 }
 
 /* Embedded Audio & Video */
@@ -214,10 +230,24 @@ video, audio {
 video {
   border-radius: 4px;
   background-color: #0D1117;
+  box-shadow: 0 3px 8px #000000;
 }
 
 figure {
   margin: 8px 0 0;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-img {
+  border-radius: 4px;
+  margin-bottom: 14px;
+  box-shadow: 0 3px 8px #000000;
 }
 
 figcaption {
@@ -270,6 +300,13 @@ tbody tr:nth-of-type(even) {
 
 .resume-list li {
   margin-bottom: 8px;
+}
+
+/* Proposal Page Lists */
+.proposal-page main ul,
+.proposal-page main ol {
+  padding-left: 24px;
+  margin-bottom: 16px;
 }
 
 /* Contact Form */
@@ -328,13 +365,14 @@ button.btn {
     margin-bottom: 30px;
   }
 
+  /* Home Featured Projects Grid */
   .projects-row {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 24px;
   }
 
   .projects-row .card {
-    flex: 1;
     margin-bottom: 0;
   }
 
@@ -346,15 +384,19 @@ button.btn {
     align-items: start;
   }
 
-  /* Skills 3 Column Grid */
+  /* Skills Grid: 2 columns on tablet, third card spans the full row */
   .skills-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 24px;
   }
 
   .skills-grid .card {
     margin-bottom: 0;
+  }
+
+  .skills-grid .card:last-child {
+    grid-column: 1 / -1;
   }
 
   /* Resume Sidebar + Main Column */
@@ -376,5 +418,17 @@ button.btn {
   footer .container {
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+
+/* Large desktop layout */
+@media (min-width: 1024px) {
+  /* Skills 3 Column Grid */
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .skills-grid .card:last-child {
+    grid-column: auto;
   }
 }

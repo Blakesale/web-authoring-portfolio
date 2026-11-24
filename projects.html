@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
   <title>Projects - Blake Jakob</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,7 +13,7 @@
 </head>
 <body>
 <!-- Blake Jakob -->
-<!-- November 17, 2026 -->
+<!-- November 24, 2026 -->
 <!-- Description: Projects page showcasing my C++ game and web coursework -->
 
   <!-- Header & Navigation -->
@@ -55,7 +57,7 @@
         </div>
 
         <div class="project-media">
-          <video controls preload="metadata">
+          <video controls preload="metadata" poster="images/heros-journey-screenshot.png">
             <source src="media/heros-journey-demo.mp4" type="video/mp4">
             <track kind="captions" src="media/heros-journey-captions.vtt" srclang="en" label="English" default>
             Your browser does not support the video tag.
@@ -72,18 +74,26 @@
 
       </article>
 
-      <!-- Web Authoring Coursework -->
-      <article class="card">
-        <h2>Web Authoring Portfolio</h2>
-        <div class="tags">
-          <span class="tag">HTML5</span>
-          <span class="tag">CSS3</span>
-          <span class="tag">WCAG</span>
+      <!-- Web Authoring Coursework (details column + screenshot column) -->
+      <article class="card project-feature">
+
+        <div class="project-info">
+          <h2>Web Authoring Portfolio</h2>
+          <div class="tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">WCAG</span>
+          </div>
+          <p>
+            A mobile-first portfolio website created for CTS 1831C at Broward College using semantic HTML5 structure, responsive CSS layouts, and W3C validation.
+          </p>
+          <p><a href="https://github.com/blakesale/web-authoring-portfolio" target="_blank" rel="noopener">View on GitHub &rarr;</a></p>
         </div>
-        <p>
-          A mobile-first portfolio website created for CTS 1831C at Broward College using semantic HTML5 structure, responsive CSS layouts, and W3C validation.
-        </p>
-        <p><a href="https://github.com/blakesale/web-authoring-portfolio" target="_blank" rel="noopener">View on GitHub &rarr;</a></p>
+
+        <div class="project-media">
+          <img src="images/portfolio-home.png" alt="Home page of this portfolio website on a desktop screen" class="card-img" width="1200" height="573">
+        </div>
+
       </article>
 
     </div>
